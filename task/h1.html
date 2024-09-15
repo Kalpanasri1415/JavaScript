@@ -1,0 +1,16 @@
+<h1 id="result">Name</h1>
+<button onclick="update(event)">Kalpana</button>
+<button onclick="update(event)">Meenu</button>
+<button onclick="update(event)">Hema</button>
+
+<script>
+    //select h1
+    var h1=document.getElementById("result")
+    function update(event)
+    {
+        //console.log(event)----------event--> it hols all the information about the button
+        //console.log(event.target)------------event.target--> <button onclick="update(event)">Kalpana</button> whenever place a mouse on target,Kalpana is select so we want target
+        h1.textContent=event.target.textContent
+
+    }
+</script>

@@ -1,0 +1,46 @@
+/* ways to selecting an getElement
+querySelector
+querySelectorAll
+getElementById
+getElemtByClassName
+getElementByTagName
+*/
+
+
+<h1 class="ok">One</h1>
+<h1 class="ok">Two</h1>
+<h1 class="ok">Three</h1>
+<script>
+    var div=document.querySelectorAll(".ok")
+    console.log(div)
+</script>
+
+/* o/p 
+1
+: 
+h1.ok
+2
+: 
+h1.ok
+length
+: 
+3
+[[Prototype]]
+: 
+NodeList
+*/
+
+<h1 class="ok">One</h1>
+<h1 class="ok">Two</h1>
+<h1 class="ok">Three</h1>
+<script>
+    var div=document.querySelectorAll(".ok")
+    for(count=0;count<div.length;count++)
+{
+    console.log(div[count].textContent)
+}
+</script>
+
+//o/p: One
+Two
+Three

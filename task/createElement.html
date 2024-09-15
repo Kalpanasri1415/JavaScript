@@ -1,0 +1,38 @@
+//append
+<div>
+    <h1>MK</h1>
+</div>
+<script>
+    var div= document.querySelector("div")
+    div.append("Hello")
+    div.append("Hello")
+</script>           
+// o/p: MK
+        HelloHellop
+
+--------------------------------------------
+// prepend
+<div>
+    <h1>MK</h1>
+</div>
+<script>
+    var div= document.querySelector("div")
+    div.prepend("Hello")
+</script>  
+
+// o/p:   Hello
+          MK
+--------------------------------------------
+
+//insertAdjacentElement
+
+<div>
+    <h1>MK</h1>
+    <h1>Mk</h1>
+</div>
+<script>
+    var div= document.querySelector("div")
+    var h1=document.createElement("h1")
+    h1.textContent="Hello"
+    div.insertAdjacentElement("beforebegin",h1)
+</script>
